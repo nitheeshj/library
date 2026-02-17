@@ -7,7 +7,24 @@
 </head>
 <body>
 
-  <h1>Hello World</h1>
+  <h1>My Library</h1>
+
+  <button id="newBookBtn">New Book</button>
+
+    <form id="bookForm" style="display:none;">
+      <input type="text" id="title" placeholder="Title" required>
+      <input type="text" id="author" placeholder="Author" required>
+      <input type="number" id="pages" placeholder="Pages" required>
+
+      <label>
+        Read?
+        <input type="checkbox" id="read">
+      </label>
+
+      <button type="submit">Add Book</button>
+    </form>
+
+  <div id="library"></div>
 
   <script src="script.js"></script>
 </body>
